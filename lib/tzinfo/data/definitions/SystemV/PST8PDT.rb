@@ -548,6 +548,8 @@ module TZInfo
             tz.transition 2065, 10, :o0, 3023686800, 19804671, 8
             tz.transition 2066, 4, :o1, 3039415200, 29709191, 12
             tz.transition 2066, 10, :o0, 3055741200, 19807639, 8
+            tz.transition 2067, 4, :o1, 3070864800, 29713559, 12
+            tz.transition 2067, 10, :o0, 3087190800, 19810551, 8
           end
         end
       end
