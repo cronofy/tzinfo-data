@@ -12,8 +12,8 @@ module TZInfo
           
           timezone 'America/Campo_Grande' do |tz|
             tz.offset :o0, -13108, 0, :LMT
-            tz.offset :o1, -14400, 0, :AMT
-            tz.offset :o2, -14400, 3600, :AMST
+            tz.offset :o1, -14400, 0, :'-04'
+            tz.offset :o2, -14400, 3600, :'-03'
             
             tz.transition 1914, 1, :o1, -1767212492, 52274886877, 21600
             tz.transition 1931, 10, :o2, -1206954000, 19412945, 8
@@ -200,6 +200,8 @@ module TZInfo
             tz.transition 2065, 2, :o1, 3001892400, 19802653, 8
             tz.transition 2065, 10, :o2, 3023064000, 7426730, 3
             tz.transition 2066, 2, :o1, 3033946800, 19805621, 8
+            tz.transition 2066, 10, :o2, 3054513600, 7427822, 3
+            tz.transition 2067, 2, :o1, 3065396400, 19808533, 8
           end
         end
       end

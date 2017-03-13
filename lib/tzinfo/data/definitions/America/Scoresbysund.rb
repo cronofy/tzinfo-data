@@ -12,10 +12,10 @@ module TZInfo
           
           timezone 'America/Scoresbysund' do |tz|
             tz.offset :o0, -5272, 0, :LMT
-            tz.offset :o1, -7200, 0, :CGT
-            tz.offset :o2, -7200, 3600, :CGST
-            tz.offset :o3, -3600, 3600, :EGST
-            tz.offset :o4, -3600, 0, :EGT
+            tz.offset :o1, -7200, 0, :'-02'
+            tz.offset :o2, -7200, 3600, :'-01'
+            tz.offset :o3, -3600, 3600, :'+00'
+            tz.offset :o4, -3600, 0, :'-01'
             
             tz.transition 1916, 7, :o1, -1686090728, 26147583659, 10800
             tz.transition 1980, 4, :o2, 323841600
@@ -192,6 +192,8 @@ module TZInfo
             tz.transition 2065, 10, :o4, 3023658000, 59414005, 24
             tz.transition 2066, 3, :o3, 3036963600, 59417701, 24
             tz.transition 2066, 10, :o4, 3055712400, 59422909, 24
+            tz.transition 2067, 3, :o3, 3068413200, 59426437, 24
+            tz.transition 2067, 10, :o4, 3087162000, 59431645, 24
           end
         end
       end

@@ -13,9 +13,9 @@ module TZInfo
           timezone 'America/Asuncion' do |tz|
             tz.offset :o0, -13840, 0, :LMT
             tz.offset :o1, -13840, 0, :AMT
-            tz.offset :o2, -14400, 0, :PYT
-            tz.offset :o3, -10800, 0, :PYT
-            tz.offset :o4, -14400, 3600, :PYST
+            tz.offset :o2, -14400, 0, :'-04'
+            tz.offset :o3, -10800, 0, :'-03'
+            tz.offset :o4, -14400, 3600, :'-03'
             
             tz.transition 1890, 1, :o1, -2524507760, 2604278153, 1080
             tz.transition 1931, 10, :o2, -1206389360, 2620754633, 1080
@@ -203,6 +203,8 @@ module TZInfo
             tz.transition 2065, 3, :o2, 3004916400, 19802933, 8
             tz.transition 2065, 10, :o4, 3021854400, 7426688, 3
             tz.transition 2066, 3, :o2, 3036970800, 19805901, 8
+            tz.transition 2066, 10, :o4, 3053304000, 7427780, 3
+            tz.transition 2067, 3, :o2, 3068420400, 19808813, 8
           end
         end
       end

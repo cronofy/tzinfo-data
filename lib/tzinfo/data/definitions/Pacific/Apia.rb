@@ -13,11 +13,11 @@ module TZInfo
           timezone 'Pacific/Apia' do |tz|
             tz.offset :o0, 45184, 0, :LMT
             tz.offset :o1, -41216, 0, :LMT
-            tz.offset :o2, -41400, 0, :WSST
-            tz.offset :o3, -39600, 0, :SST
-            tz.offset :o4, -39600, 3600, :SDT
-            tz.offset :o5, 46800, 3600, :WSDT
-            tz.offset :o6, 46800, 0, :WSST
+            tz.offset :o2, -41400, 0, :'-1130'
+            tz.offset :o3, -39600, 0, :'-11'
+            tz.offset :o4, -39600, 3600, :'-10'
+            tz.offset :o5, 46800, 3600, :'+14'
+            tz.offset :o6, 46800, 0, :'+13'
             
             tz.transition 1879, 7, :o1, -2855737984, 3250172219, 1350
             tz.transition 1911, 1, :o2, -1861878784, 3265701269, 1350
@@ -135,6 +135,8 @@ module TZInfo
             tz.transition 2065, 4, :o6, 3006079200, 29704561, 12
             tz.transition 2065, 9, :o5, 3021199200, 29706661, 12
             tz.transition 2066, 4, :o6, 3037528800, 29708929, 12
+            tz.transition 2066, 9, :o5, 3052648800, 29711029, 12
+            tz.transition 2067, 4, :o6, 3068978400, 29713297, 12
           end
         end
       end

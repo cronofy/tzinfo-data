@@ -13,9 +13,9 @@ module TZInfo
           timezone 'Atlantic/Madeira' do |tz|
             tz.offset :o0, -4056, 0, :LMT
             tz.offset :o1, -4056, 0, :FMT
-            tz.offset :o2, -3600, 0, :MADT
-            tz.offset :o3, -3600, 3600, :MADST
-            tz.offset :o4, -3600, 7200, :MADMT
+            tz.offset :o2, -3600, 0, :'-01'
+            tz.offset :o3, -3600, 3600, :'+00'
+            tz.offset :o4, -3600, 7200, :'+01'
             tz.offset :o5, 0, 0, :WET
             tz.offset :o6, 0, 3600, :WEST
             
@@ -298,6 +298,8 @@ module TZInfo
             tz.transition 2065, 10, :o5, 3023658000, 59414005, 24
             tz.transition 2066, 3, :o6, 3036963600, 59417701, 24
             tz.transition 2066, 10, :o5, 3055712400, 59422909, 24
+            tz.transition 2067, 3, :o6, 3068413200, 59426437, 24
+            tz.transition 2067, 10, :o5, 3087162000, 59431645, 24
           end
         end
       end

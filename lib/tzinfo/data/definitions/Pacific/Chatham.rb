@@ -12,9 +12,9 @@ module TZInfo
           
           timezone 'Pacific/Chatham' do |tz|
             tz.offset :o0, 44028, 0, :LMT
-            tz.offset :o1, 44100, 0, :CHAST
-            tz.offset :o2, 45900, 0, :CHAST
-            tz.offset :o3, 45900, 3600, :CHADT
+            tz.offset :o1, 44100, 0, :'+1215'
+            tz.offset :o2, 45900, 0, :'+1245'
+            tz.offset :o3, 45900, 3600, :'+1345'
             
             tz.transition 1868, 11, :o1, -3192437628, 5768731177, 2400
             tz.transition 1945, 12, :o2, -757426500, 233454815, 96
@@ -202,6 +202,8 @@ module TZInfo
             tz.transition 2065, 4, :o2, 3006079200, 29704561, 12
             tz.transition 2065, 9, :o3, 3021199200, 29706661, 12
             tz.transition 2066, 4, :o2, 3037528800, 29708929, 12
+            tz.transition 2066, 9, :o3, 3052648800, 29711029, 12
+            tz.transition 2067, 4, :o2, 3068978400, 29713297, 12
           end
         end
       end

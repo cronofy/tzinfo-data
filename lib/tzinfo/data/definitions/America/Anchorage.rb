@@ -13,9 +13,9 @@ module TZInfo
           timezone 'America/Anchorage' do |tz|
             tz.offset :o0, 50424, 0, :LMT
             tz.offset :o1, -35976, 0, :LMT
-            tz.offset :o2, -36000, 0, :CAT
-            tz.offset :o3, -36000, 3600, :CAWT
-            tz.offset :o4, -36000, 3600, :CAPT
+            tz.offset :o2, -36000, 0, :AST
+            tz.offset :o3, -36000, 3600, :AWT
+            tz.offset :o4, -36000, 3600, :APT
             tz.offset :o5, -36000, 0, :AHST
             tz.offset :o6, -36000, 3600, :AHDT
             tz.offset :o7, -32400, 0, :YST
@@ -225,6 +225,8 @@ module TZInfo
             tz.transition 2065, 11, :o8, 3024295200, 29707091, 12
             tz.transition 2066, 3, :o9, 3035790000, 59417375, 24
             tz.transition 2066, 11, :o8, 3056349600, 29711543, 12
+            tz.transition 2067, 3, :o9, 3067239600, 59426111, 24
+            tz.transition 2067, 11, :o8, 3087799200, 29715911, 12
           end
         end
       end

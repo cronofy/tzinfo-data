@@ -12,8 +12,8 @@ module TZInfo
           
           timezone 'America/Godthab' do |tz|
             tz.offset :o0, -12416, 0, :LMT
-            tz.offset :o1, -10800, 0, :WGT
-            tz.offset :o2, -10800, 3600, :WGST
+            tz.offset :o1, -10800, 0, :'-03'
+            tz.offset :o2, -10800, 3600, :'-02'
             
             tz.transition 1916, 7, :o1, -1686083584, 3268448069, 1350
             tz.transition 1980, 4, :o2, 323845200
@@ -190,6 +190,8 @@ module TZInfo
             tz.transition 2065, 10, :o1, 3023658000, 59414005, 24
             tz.transition 2066, 3, :o2, 3036963600, 59417701, 24
             tz.transition 2066, 10, :o1, 3055712400, 59422909, 24
+            tz.transition 2067, 3, :o2, 3068413200, 59426437, 24
+            tz.transition 2067, 10, :o1, 3087162000, 59431645, 24
           end
         end
       end

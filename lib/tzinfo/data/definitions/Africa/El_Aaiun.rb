@@ -12,7 +12,7 @@ module TZInfo
           
           timezone 'Africa/El_Aaiun' do |tz|
             tz.offset :o0, -3168, 0, :LMT
-            tz.offset :o1, -3600, 0, :WAT
+            tz.offset :o1, -3600, 0, :'-01'
             tz.offset :o2, 0, 0, :WET
             tz.offset :o3, 0, 3600, :WEST
             
@@ -162,6 +162,8 @@ module TZInfo
             tz.transition 2065, 10, :o2, 3023661600, 29707003, 12
             tz.transition 2066, 3, :o3, 3036967200, 29708851, 12
             tz.transition 2066, 10, :o2, 3055716000, 29711455, 12
+            tz.transition 2067, 3, :o3, 3068416800, 29713219, 12
+            tz.transition 2067, 10, :o2, 3087165600, 29715823, 12
           end
         end
       end

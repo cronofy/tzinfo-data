@@ -12,7 +12,7 @@ module TZInfo
           
           timezone 'Atlantic/Canary' do |tz|
             tz.offset :o0, -3696, 0, :LMT
-            tz.offset :o1, -3600, 0, :CANT
+            tz.offset :o1, -3600, 0, :'-01'
             tz.offset :o2, 0, 0, :WET
             tz.offset :o3, 0, 3600, :WEST
             
@@ -192,6 +192,8 @@ module TZInfo
             tz.transition 2065, 10, :o2, 3023658000, 59414005, 24
             tz.transition 2066, 3, :o3, 3036963600, 59417701, 24
             tz.transition 2066, 10, :o2, 3055712400, 59422909, 24
+            tz.transition 2067, 3, :o3, 3068413200, 59426437, 24
+            tz.transition 2067, 10, :o2, 3087162000, 59431645, 24
           end
         end
       end

@@ -13,8 +13,8 @@ module TZInfo
           timezone 'America/Miquelon' do |tz|
             tz.offset :o0, -13480, 0, :LMT
             tz.offset :o1, -14400, 0, :AST
-            tz.offset :o2, -10800, 0, :PMST
-            tz.offset :o3, -10800, 3600, :PMDT
+            tz.offset :o2, -10800, 0, :'-03'
+            tz.offset :o3, -10800, 3600, :'-02'
             
             tz.transition 1911, 5, :o1, -1850328920, 5225410777, 2160
             tz.transition 1980, 5, :o2, 326001600
@@ -178,6 +178,8 @@ module TZInfo
             tz.transition 2065, 11, :o2, 3024273600, 7426772, 3
             tz.transition 2066, 3, :o3, 3035768400, 59417369, 24
             tz.transition 2066, 11, :o2, 3056328000, 7427885, 3
+            tz.transition 2067, 3, :o3, 3067218000, 59426105, 24
+            tz.transition 2067, 11, :o2, 3087777600, 7428977, 3
           end
         end
       end
