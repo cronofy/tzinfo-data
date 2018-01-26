@@ -58,7 +58,7 @@ module TZInfo
         linked_timezone 'Africa/Nouakchott'
         linked_timezone 'Africa/Ouagadougou'
         linked_timezone 'Africa/Porto-Novo'
-        linked_timezone 'Africa/Sao_Tome'
+        timezone 'Africa/Sao_Tome'
         linked_timezone 'Africa/Timbuktu'
         timezone 'Africa/Tripoli'
         timezone 'Africa/Tunis'
